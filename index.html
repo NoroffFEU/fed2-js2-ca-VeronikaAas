@@ -1,22 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noroff FED2 JS2 CA</title>
+    <script type="module" src="/src/app.js"></script>
+    <script type="module" src="./src/js/ui/auth/logout.js"></script>
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noroff FED2 JS2 CA</title>
-  <script type="module" src="/src/app.js"></script>
-</head>
+  <body>
+    <main>
+      <h1>Get inspired</h1>
 
-<body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
+      <nav>
+        <a href="/">Home</a>
+        <a href="/profile/">Profile</a>
+        <a href="/post/create/">Create Post</a>
+        <button id="logoutButton">Log Out</button>
+      </nav>
 
-  <h1>Home</h1>
-
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/">Login</a>
-  <a href="/auth/register/">Register</a>
-  <button>Logout</button>
-</body>
+      <div id="posts-container"></div>
+    </main>
+  </body>
 </html>
